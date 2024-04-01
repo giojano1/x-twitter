@@ -1,0 +1,255 @@
+body {
+  background-color: black;
+}
+.main_content {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.main_content_left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.main_content_right {
+  width: 40%;
+}
+.main_content_left img {
+  width: 350px;
+}
+.main_content_right {
+  margin-left: 40px;
+}
+.heading h1 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  padding: 50px 0px;
+  color: white;
+}
+.heading_paragraph h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: white;
+}
+.nav_links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.nav_links button {
+  border: 1px solid #e4eaed;
+  border-radius: 42px;
+  background-color: white;
+  max-width: 300px;
+  height: 44px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.nav_links button img {
+  width: 20px;
+  margin-right: 5px;
+}
+.signup_service p {
+  font-size: 1.4rem;
+  color: gray;
+  max-width: 300px;
+}
+.signup_service span {
+  color: #1e97e1;
+}
+.main_content_footer ul li {
+  display: inline-block;
+}
+.split {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+.split span {
+  color: gainsboro;
+  font-size: 1.5rem;
+  padding: 0px 5px;
+}
+.split_box {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(84, 84, 84);
+}
+.createAccount {
+  background-color: #1e97e1 !important;
+  border: none !important;
+  color: white;
+  font-weight: bold;
+  transition: 500ms;
+}
+.createAccount:hover {
+  background-color: #1580c2 !important;
+  transition: 500ms;
+}
+.apple {
+  font-weight: bold;
+}
+.signin_service {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.signin_service span {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.signin_service button {
+  border: 1px solid #e4eaed;
+  border-radius: 42px;
+  background-color: transparent;
+  max-width: 300px;
+  height: 44px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #1e97e1;
+}
+/* start of pupup */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 1px solid black;
+  padding: 50px;
+  width: 600px;
+  z-index: 9999;
+  border-radius: 20px;
+}
+.popup_logo {
+  display: flex;
+  justify-content: center;
+}
+.popup_logo img {
+  width: 30px;
+}
+#popup form {
+  display: flex;
+  flex-direction: column;
+}
+.form_title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.signup_form label input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+.signup_form label input:focus {
+  outline: 1px solid #1580c2;
+}
+.form_title2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.date_birth {
+  display: flex;
+  justify-content: space-between;
+}
+.month {
+  width: 42%;
+}
+.day {
+  width: 25%;
+}
+.year {
+  width: 25%;
+}
+.form_age {
+  font-size: 1.4rem;
+  color: rgb(113, 118, 123);
+  margin-top: 5px;
+}
+.form_apply {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.form_apply button {
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  font-size: 2rem;
+}
+.closeBut {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid black;
+}
+#overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(95, 95, 95, 0.5); /* Semi-transparent black */
+  z-index: 9998; /* Below the popup */
+}
+/* end of pupup */
+@media screen and (max-width: 810px) {
+  .main_content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .main_content_left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .main_content_right {
+    width: 100%;
+  }
+  .main_content_left img {
+    width: 50px;
+  }
+  .heading {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #popup {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
