@@ -1,0 +1,55 @@
+body {
+  background-color: black !important;
+}
+.main {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+.grid-1 {
+  width: 20%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+.grid-2 {
+  width: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+.grid-3 {
+  border: 1px solid white;
+  width: 30%;
+  overflow: hidden;
+}
+.logo {
+  padding: 12px 20px;
+}
+.logo img {
+  width: 27px;
+}
+.navlink {
+  margin-top: 8px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 20px;
+  transition: 300ms;
+}
+.navlink:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+  transition: 300ms;
+}
+.navlink svg {
+  width: 26px;
+  fill: white;
+}
+.navlink span {
+  font-size: 2rem;
+  color: white;
+  margin-left: 10px;
+}
+.inuse {
+  font-weight: bold;
+}
