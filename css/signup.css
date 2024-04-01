@@ -193,16 +193,23 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+
   margin: 0 auto;
   margin-top: 30px;
 }
-.form_apply button {
+.form_apply a {
   width: 100%;
   border: none;
   border-radius: 40px;
   height: 40px;
   font-size: 2rem;
+  background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .closeBut {
   position: absolute;
   top: 0;
