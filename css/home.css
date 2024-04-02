@@ -7,37 +7,39 @@ body {
   display: flex;
   width: 100%;
 }
-.grid-1 {
-  width: 20%;
+.sidenav {
+  max-width: 275px;
   border: 1px solid white;
-  overflow: hidden;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .grid-2 {
-  width: 50%;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   border: 1px solid white;
-  overflow: hidden;
 }
 .grid-3 {
   border: 1px solid white;
   width: 30%;
   overflow: hidden;
 }
+/* start of sidebar */
 .logo {
-  padding: 12px 20px;
+  padding: 12px 10px;
 }
 .logo img {
   width: 27px;
 }
 .navlink {
-  margin-top: 8px;
   display: flex;
   width: fit-content;
   align-items: center;
-  padding: 12px 20px;
+  padding: 12px 10px;
   border-radius: 20px;
   transition: 300ms;
 }
@@ -61,9 +63,8 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-
   margin-bottom: 20px;
-  padding: 0px 20px;
+  padding-left: 10px;
 }
 .user img {
   width: 40px;
@@ -84,3 +85,53 @@ body {
   color: gray;
   font-size: 1.5rem;
 }
+.nav_post {
+  width: 80%;
+  background-color: #1e97e1 !important;
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 15px 0px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+.nav_post svg {
+  display: none;
+}
+/* sidebar media query */
+@media screen and (max-width: 1260px) {
+  .navlink span {
+    display: none;
+  }
+  .nav_post span {
+    display: none;
+  }
+  .nav_post {
+    display: flex;
+    width: auto;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  .nav_post svg {
+    display: block;
+    width: 30px;
+    fill: white;
+  }
+  .user_info {
+    display: none;
+  }
+  .sidenav {
+    align-items: flex-end;
+    max-width: 180px;
+  }
+  main {
+    margin: 0 auto;
+    display: flex;
+  }
+  .user {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}
+/* end of sidebar */
