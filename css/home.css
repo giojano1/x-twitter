@@ -15,14 +15,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
-.grid-2 {
+.main_content {
   max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.grid-3 {
+.sidebar {
   max-width: 350px;
   border: 1px solid white;
   width: 100%;
@@ -53,7 +56,7 @@ body {
 }
 .navlink span {
   font-size: 2rem;
-  color: white;
+  color: #e7e9ea;
   margin-left: 10px;
 }
 .inuse {
@@ -185,6 +188,10 @@ body {
   width: 100%;
   font-size: 2rem;
   padding: 10px;
+  color: white;
+}
+.postBar:focus {
+  outline: none;
 }
 .post_navlinks {
   margin-top: 20px;
@@ -211,4 +218,85 @@ body {
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 10px 15px;
+}
+/* start of content */
+.content_container {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding: 15px;
+}
+.content_user img {
+  width: 40px;
+  border-radius: 50%;
+}
+.content {
+  width: 100%;
+  padding: 5px;
+}
+.content_user_info {
+  display: flex;
+}
+.content_user_info p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.content_user_info p:hover {
+  text-decoration: 1px solid underline;
+}
+.content_user_info span {
+  color: rgb(113, 118, 123);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.content_box p {
+  font-size: 15px;
+  color: #e7e9ea;
+  margin-top: 10px;
+}
+.content_box_img {
+  width: 100%;
+  margin-top: 10px;
+}
+.content_box_img img {
+  width: 100%;
+  border-radius: 15px;
+}
+.content_navbuttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.content_navBut {
+  display: flex;
+  align-items: center;
+}
+.content_navBut svg {
+  width: 18px;
+  fill: rgb(113, 118, 123);
+  margin-right: 5px;
+}
+.content_navBut span {
+  color: rgb(113, 118, 123);
+  font-size: 1.3rem;
+}
+.commButton:hover span {
+  color: #1e97e1;
+  transition: 300ms;
+}
+.commButton:hover svg {
+  fill: #1e97e1;
+  transition: 300ms;
+}
+.repostButton:hover span {
+  color: rgb(0, 186, 124);
+  transition: 300ms;
+}
+.repostButton:hover svg {
+  fill: rgb(0, 186, 124);
+  transition: 300ms;
 }
