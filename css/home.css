@@ -487,4 +487,7 @@ body {
   .main_header {
     display: none;
   }
+  .main_content {
+    border: none;
+  }
 }
