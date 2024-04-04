@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script type="text/javascript" src="../js/main.js"></script>
 
     <title>Document</title>
   </head>
@@ -26,6 +25,7 @@
           </div>
         </section>
       </section>
+      <!-- main -->
     <main class="main">
     
       <!-- sidenav -->
@@ -192,9 +192,13 @@
             </svg>
           </button>
         </nav>
-
-        <!-- user -->
-        <div class="user">
+        <!-- user -->        
+        <div id="sidebarUser" class="user">
+          <!--  -->
+          <div class="user_popup" id="userPopup">
+           <a href="../index.html">Log Out @giojanela</a>
+           </div>
+          <!--  -->
           <img src="../assets/img/user.jpg" alt="user" />
           <div class="user_info">
             <span>Giorgi Janelidze</span>
@@ -202,6 +206,8 @@
           </div>
         </div>
       </section>
+
+
       <section class="main_content">
         <!-- header -->
         <section class="main_header">
@@ -550,8 +556,7 @@
         </div>
       </section>
     </main>
-  <script>
 
-  </script>
+ <script src="../js/home.js"></script>
   </body>
 </html>
