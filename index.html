@@ -64,36 +64,32 @@
             <div class="popup_logo">
               <img src="assets/img/x-logo.png" alt="logo" />
             </div>
-            <form class="signup_form">
+            <!-- form -->
+            <form id="signupForm" class="signup_form" action="">
               <span class="form_title">Create Account</span>
               <label>
-                <input type="text" placeholder="Name" />
+                <input type="text" id="username" placeholder="Name" required />
               </label>
               <label>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" required />
               </label>
               <span class="form_title2">Date of birth</span>
               <p class="form_age">
                 This will not be shown publicly. Confirm your own age, even if
                 this account is for a business, a pet, or something else.
               </p>
-              <div class="date_birth">
-                <label class="month">
-                  <input type="number" min="1" max="12" placeholder="Month" />
-                </label>
-                <label class="day">
-                  <input type="number" min="1" max="31" placeholder="Day" />
-                </label>
-                <label class="year">
-                  <input type="number" placeholder="Year" />
-                </label>
-              </div>
+              <label>
+                <input type="date" id="date" />
+              </label>
               <div class="form_apply">
-                <a href="pages/home.html">Next</a>
+                <input type="submit" id="submitBtn" value="Submit" disabled />
               </div>
             </form>
           </div>
         </div>
+        <script>
+          
+        </script>
         <!-- sign up page end -->
         <!-- Overlay element -->
         <div id="overlay"></div>

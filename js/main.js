@@ -36,3 +36,25 @@ document.addEventListener("click", hidePopup);
 
 // Event listener to hide the popup when the close button is clicked
 closePopupButton.addEventListener("click", closePopup);
+
+//sign up form
+document.getElementById("signupForm").addEventListener("input", function () {
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var date = document.getElementById("date").value;
+  var submitBtn = document.getElementById("submitBtn");
+
+  if (username.trim() !== "" && email.trim() !== "" && date.trim() !== "") {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
+document
+  .getElementById("signupForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Redirect to another HTML file
+    window.location.href = "pages/home.html";
+  });
